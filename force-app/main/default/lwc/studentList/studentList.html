@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Students">
+        <div class="slds-p-around_medium">
+            <template for:each={students} for:item="stu">
+                <p key={stu.id}>{stu.name}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
